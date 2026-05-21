@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover India – Explore the best tourist places, heritage sites, and hidden gems across India." />
+  <title>Discover India – Explore the Incredible</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <span class="loader-lotus">🪷</span>
+      <p>Loading Incredible India…</p>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-icon">🪷</span>
+        <span class="brand-name">Discover<strong>India</strong></span>
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home"         class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#destinations" class="nav-link" data-section="destinations">Destinations</a></li>
+          <li><a href="#experiences"  class="nav-link" data-section="experiences">Experiences</a></li>
+          <li><a href="#culture"      class="nav-link" data-section="culture">Culture</a></li>
+          <li><a href="#gallery"      class="nav-link" data-section="gallery">Gallery</a></li>
+          <li><a href="#contact"      class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1800&q=85')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1800&q=85')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1800&q=85')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1800&q=85')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="heroContent">
+      <p class="hero-eyebrow">Welcome to</p>
+      <h1 class="hero-title">Discover <span class="gradient-text">India</span></h1>
+      <p class="hero-subtitle" id="heroSubtitle">A land of timeless beauty, vibrant culture, and extraordinary experiences.</p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">Explore Places</a>
+        <a href="#contact"      class="btn btn-ghost">Plan a Trip</a>
+      </div>
+    </div>
+    <div class="hero-slide-dots" id="heroSlideDots"></div>
+    <div class="hero-stats">
+      <div class="stat" data-target="29"   data-suffix="">
+        <span class="stat-num">0</span><span class="stat-sfx"></span>
+        <p>States</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat" data-target="40"   data-suffix="+">
+        <span class="stat-num">0</span><span class="stat-sfx">+</span>
+        <p>UNESCO Sites</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat" data-target="5000" data-suffix="+">
+        <span class="stat-num">0</span><span class="stat-sfx">+</span>
+        <p>Years of History</p>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat" data-target="200" data-suffix="+">
+        <span class="stat-num">0</span><span class="stat-sfx">+</span>
+        <p>Must-Visit Spots</p>
+      </div>
+    </div>
+    <a href="#destinations" class="hero-scroll-btn" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===== TICKER ===== -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack">
+      <span>🏯 Rajasthan</span><span>🏔️ Himalayas</span><span>🌴 Kerala</span>
+      <span>🕌 Taj Mahal</span><span>🏖️ Goa</span><span>🎭 Classical Arts</span>
+      <span>🍛 Cuisine</span><span>🛕 Temples</span><span>🦁 Wildlife</span>
+      <span>🌺 Festivals</span><span>🚂 Train Rides</span><span>🧘 Yoga</span>
+      <span>🏯 Rajasthan</span><span>🏔️ Himalayas</span><span>🌴 Kerala</span>
+      <span>🕌 Taj Mahal</span><span>🏖️ Goa</span><span>🎭 Classical Arts</span>
+      <span>🍛 Cuisine</span><span>🛕 Temples</span><span>🦁 Wildlife</span>
+      <span>🌺 Festivals</span><span>🚂 Train Rides</span><span>🧘 Yoga</span>
+    </div>
+  </div>
+
+  <!-- ===== SEARCH BAR ===== -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="text" id="destSearch" class="search-input" placeholder="Search destinations, experiences, states…" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+      <div class="filter-chips" id="filterChips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="heritage">Heritage</button>
+        <button class="chip" data-filter="nature">Nature</button>
+        <button class="chip" data-filter="beach">Beach</button>
+        <button class="chip" data-filter="spiritual">Spiritual</button>
+        <button class="chip" data-filter="adventure">Adventure</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESTINATIONS ===== -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Top Picks</p>
+        <h2 class="section-title">Iconic <span>Destinations</span></h2>
+        <p class="section-desc">From snow-capped mountains to golden shores — India holds an entire world within its borders.</p>
+      </div>
+      <div class="dest-grid" id="destGrid">
+
+        <article class="dest-card" data-category="heritage" data-name="Taj Mahal Agra">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80')">
+            <span class="dest-tag">UNESCO Heritage</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="1">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Agra, Uttar Pradesh</span>
+              <span class="dest-rating">★ 4.9</span>
+            </div>
+            <h3>Taj Mahal</h3>
+            <p>Marvel at the world's greatest monument of love, glowing golden at sunrise.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Oct–Mar</span>
+              <button class="dest-btn" data-dest="taj-mahal">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="nature" data-name="Kerala Backwaters">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800&q=80')">
+            <span class="dest-tag">Nature Escape</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="2">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Kerala</span>
+              <span class="dest-rating">★ 4.8</span>
+            </div>
+            <h3>Kerala Backwaters</h3>
+            <p>Drift through emerald canals on a traditional houseboat in God's Own Country.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Nov–Feb</span>
+              <button class="dest-btn" data-dest="kerala">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="heritage" data-name="Jaipur Rajasthan Pink City">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=800&q=80')">
+            <span class="dest-tag">Royal Heritage</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="3">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Jaipur, Rajasthan</span>
+              <span class="dest-rating">★ 4.8</span>
+            </div>
+            <h3>Pink City – Jaipur</h3>
+            <p>Magnificent forts, royal palaces, and vibrant bazaars in the jewel of Rajasthan.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Nov–Feb</span>
+              <button class="dest-btn" data-dest="jaipur">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="adventure" data-name="Himalayan Ranges mountains">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80')">
+            <span class="dest-tag">Adventure</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="4">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Himachal, Uttarakhand</span>
+              <span class="dest-rating">★ 4.9</span>
+            </div>
+            <h3>Himalayan Ranges</h3>
+            <p>World's mightiest peaks, serene alpine meadows, and thrilling trekking trails.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Mar–Jun</span>
+              <button class="dest-btn" data-dest="himalayas">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="beach" data-name="Goa beaches coastline">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80')">
+            <span class="dest-tag">Beach Paradise</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="5">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Goa</span>
+              <span class="dest-rating">★ 4.7</span>
+            </div>
+            <h3>Goa Coastline</h3>
+            <p>Sun-kissed golden beaches, Portuguese architecture, and vibrant nightlife.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Nov–Mar</span>
+              <button class="dest-btn" data-dest="goa">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="spiritual" data-name="Varanasi Ghats Ganges Benares">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=800&q=80')">
+            <span class="dest-tag">Spiritual</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="6">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Varanasi, UP</span>
+              <span class="dest-rating">★ 4.9</span>
+            </div>
+            <h3>Varanasi Ghats</h3>
+            <p>Experience the ancient soul of India on the banks of the sacred Ganges River.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Oct–Mar</span>
+              <button class="dest-btn" data-dest="varanasi">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="adventure" data-name="Ladakh valleys cold desert mountains">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=800&q=80')">
+            <span class="dest-tag">Adventure</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="7">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Ladakh, J&amp;K</span>
+              <span class="dest-rating">★ 4.9</span>
+            </div>
+            <h3>Ladakh Valley</h3>
+            <p>The land of high passes — stark lunar landscapes, turquoise lakes, and monasteries.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Jun–Sep</span>
+              <button class="dest-btn" data-dest="ladakh">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="nature" data-name="Ranthambore wildlife tiger safari">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80')">
+            <span class="dest-tag">Wildlife</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="8">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Ranthambore, Rajasthan</span>
+              <span class="dest-rating">★ 4.7</span>
+            </div>
+            <h3>Ranthambore NP</h3>
+            <p>Track Bengal tigers through ancient forests in one of India's finest national parks.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Oct–Apr</span>
+              <button class="dest-btn" data-dest="ranthambore">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-category="heritage" data-name="Hampi ruins Karnataka UNESCO">
+          <div class="dest-img" style="background-image:url('https://images.unsplash.com/photo-1590419690008-905895e8fe0d?w=800&q=80')">
+            <span class="dest-tag">UNESCO Heritage</span>
+            <button class="wishlist-btn" aria-label="Add to wishlist" data-id="9">♡</button>
+          </div>
+          <div class="dest-body">
+            <div class="dest-meta">
+              <span class="dest-loc">📍 Hampi, Karnataka</span>
+              <span class="dest-rating">★ 4.8</span>
+            </div>
+            <h3>Hampi Ruins</h3>
+            <p>Walk through the surreal boulder-strewn ruins of the Vijayanagara Empire.</p>
+            <div class="dest-footer">
+              <span class="dest-best">Best: Oct–Feb</span>
+              <button class="dest-btn" data-dest="hampi">Explore →</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="no-results" id="noResults" hidden>
+        <p>😕 No destinations found. Try a different search or filter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCES TABS ===== -->
+  <section class="section experiences-section" id="experiences">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Curated For You</p>
+        <h2 class="section-title">Unforgettable <span>Experiences</span></h2>
+        <p class="section-desc">Every journey through India is unique — choose yours.</p>
+      </div>
+      <div class="exp-tabs">
+        <div class="exp-tab-btns" id="expTabBtns" role="tablist">
+          <button class="tab-btn active" data-tab="wildlife" role="tab" aria-selected="true">🐘 Wildlife</button>
+          <button class="tab-btn" data-tab="temples" role="tab" aria-selected="false">🛕 Temples</button>
+          <button class="tab-btn" data-tab="cuisine" role="tab" aria-selected="false">🍛 Cuisine</button>
+          <button class="tab-btn" data-tab="adventure" role="tab" aria-selected="false">🏄 Adventure</button>
+          <button class="tab-btn" data-tab="wellness" role="tab" aria-selected="false">🧘 Wellness</button>
+          <button class="tab-btn" data-tab="trains" role="tab" aria-selected="false">🚂 Train Rides</button>
+        </div>
+        <div class="exp-tab-panels" id="expTabPanels">
+          <div class="tab-panel active" data-panel="wildlife">
+            <div class="tab-panel-img" style="background-image:url('https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=900&q=80')"></div>
+            <div class="tab-panel-body">
+              <h3>Wildlife Safaris</h3>
+              <p>India is home to some of the world's most magnificent wildlife. Track Bengal tigers in Ranthambore, witness one-horned rhinos in Kaziranga, or spot elephants in Wayanad. Our expert-guided safaris offer once-in-a-lifetime encounters with nature.</p>
+              <ul class="tab-highlights">
+                <li>🐯 Tiger spotting at Ranthambore</li>
+                <li>🦏 Rhino safaris in Kaziranga</li>
+                <li>🐘 Elephant parks in Kerala</li>
+                <li>🦁 Asiatic lions in Gir Forest</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Book Experience</a>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="temples">
+            <div class="tab-panel-img" style="background-image:url('https://images.unsplash.com/photo-1560624052-449f5ddf0c31?w=900&q=80')"></div>
+            <div class="tab-panel-body">
+              <h3>Temple Trails</h3>
+              <p>Follow ancient pilgrimage routes through magnificent Dravidian gopurams, cave temples of Ellora, and towering Nagara spires. Every stone whispers tales of devotion spanning over two millennia.</p>
+              <ul class="tab-highlights">
+                <li>🛕 Meenakshi Temple, Madurai</li>
+                <li>🪨 Ellora & Ajanta Caves</li>
+                <li>🌊 Shore Temple, Mahabalipuram</li>
+                <li>🔔 Brihadeeswarar, Thanjavur</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Book Experience</a>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="cuisine">
+            <div class="tab-panel-img" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=900&q=80')"></div>
+            <div class="tab-panel-body">
+              <h3>Culinary Tours</h3>
+              <p>From spicy Chettinad curries to delicate Kashmiri Wazwan, the flavours of India are an adventure in themselves. Join our culinary experts for hands-on cooking classes, street food walks, and royal feasts.</p>
+              <ul class="tab-highlights">
+                <li>🥘 Street food walk in Old Delhi</li>
+                <li>🍲 Rajasthani Dal Baati cooking class</li>
+                <li>🌶️ Chettinad cuisine trail</li>
+                <li>🫓 Kashmiri Wazwan banquet</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Book Experience</a>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="adventure">
+            <div class="tab-panel-img" style="background-image:url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=900&q=80')"></div>
+            <div class="tab-panel-body">
+              <h3>Adventure Sports</h3>
+              <p>Rishikesh is the adventure capital of India — go white-water rafting, bungee jumping, or zip-lining. Manali offers skiing and snowboarding. Varkala cliffs call surfers. The Himalayas dare you to trek deep into altitude.</p>
+              <ul class="tab-highlights">
+                <li>🌊 River rafting in Rishikesh</li>
+                <li>🪂 Paragliding in Bir Billing</li>
+                <li>🏔️ Trekking in Spiti Valley</li>
+                <li>🏄 Surfing at Varkala</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Book Experience</a>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="wellness">
+            <div class="tab-panel-img" style="background-image:url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&q=80')"></div>
+            <div class="tab-panel-body">
+              <h3>Yoga & Wellness</h3>
+              <p>India is the birthplace of yoga and Ayurveda. Rejuvenate at lakeside ashrams in Rishikesh, surrender to Kerala's Panchakarma treatments, or join silent meditation retreats in the Himalayas.</p>
+              <ul class="tab-highlights">
+                <li>🧘 Yoga retreats in Rishikesh</li>
+                <li>💆 Ayurvedic spa in Kovalam</li>
+                <li>🏕️ Himalayan meditation camps</li>
+                <li>🌿 Naturopathy in Coimbatore</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Book Experience</a>
+            </div>
+          </div>
+          <div class="tab-panel" data-panel="trains">
+            <div class="tab-panel-img" style="background-image:url('https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=900&q=80')"></div>
+            <div class="tab-panel-body">
+              <h3>Scenic Train Rides</h3>
+              <p>Board the Darjeeling Himalayan Railway (a UNESCO heritage train), travel in royal grandeur on the Palace on Wheels, or take the Konkan Railway through green tunnels and sea bridges along the western coast.</p>
+              <ul class="tab-highlights">
+                <li>🚂 Darjeeling Toy Train</li>
+                <li>👑 Palace on Wheels, Rajasthan</li>
+                <li>🌊 Konkan Railway coastal route</li>
+                <li>🏔️ Nilgiri Mountain Railway</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Book Experience</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CULTURE ===== -->
+  <section class="section culture-section" id="culture">
+    <div class="container">
+      <div class="culture-layout">
+        <div class="culture-text reveal">
+          <p class="eyebrow">Rich Heritage</p>
+          <h2 class="section-title">Living <span>Culture</span></h2>
+          <p class="culture-intro">India's culture is a living tapestry woven over millennia. Every state speaks its own language, dances its own dance, and celebrates with unmatched energy.</p>
+          <div class="culture-accordion" id="cultureAccordion">
+            <div class="acc-item">
+              <button class="acc-header" aria-expanded="false">
+                <span>🎶 Classical Music &amp; Dance</span>
+                <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="acc-body">
+                <p>From Bharatanatyam to Kathak, Odissi to Manipuri — India's classical dance forms are a UNESCO-recognized living heritage. Carnatic and Hindustani music traditions span over 2000 years.</p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header" aria-expanded="false">
+                <span>🎨 Folk Art &amp; Crafts</span>
+                <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="acc-body">
+                <p>Madhubani paintings, Warli art, Pattachitra scrolls, Bidriware metalwork, Dhokra casting — each craft tradition is a community's story etched in art.</p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header" aria-expanded="false">
+                <span>🎆 Festivals of Color</span>
+                <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="acc-body">
+                <p>Holi, Diwali, Durga Puja, Onam, Pushkar Fair, Rann Utsav — India celebrates with the world's most vivid colors, lights, music, and joy. There is always a festival somewhere.</p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="acc-header" aria-expanded="false">
+                <span>👘 Textiles &amp; Fashion</span>
+                <svg class="acc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="acc-body">
+                <p>Banarasi silk, Kanjivaram sarees, Bandhani tie-dye, Pashmina shawls, Phulkari embroidery — Indian textiles are globally renowned for their artistry and craftsmanship.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="culture-visuals reveal">
+          <div class="culture-grid">
+            <div class="cgrid-img cgrid-img--tall" style="background-image:url('https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=600&q=80')"></div>
+            <div class="cgrid-img" style="background-image:url('https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=400&q=80')"></div>
+            <div class="cgrid-img" style="background-image:url('https://images.unsplash.com/photo-1524175901073-2849a7af52ae?w=400&q=80')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY LIGHTBOX ===== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Visual Journey</p>
+        <h2 class="section-title">India Through the <span>Lens</span></h2>
+        <p class="section-desc">Every frame tells a story — from misty mountains to gilded temples.</p>
+      </div>
+      <div class="gal-grid" id="galGrid">
+        <figure class="gal-item" data-caption="Taj Mahal at Golden Hour" data-full="https://images.unsplash.com/photo-1548013146-72479768bada?w=1400&q=90">
+          <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80')"></div>
+          <figcaption>Taj Mahal at Golden Hour</figcaption>
+        </figure>
+        <figure class="gal-item" data-caption="Varanasi Ghats at Dawn" data-full="https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=1400&q=90">
+          <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=600&q=80')"></div>
+          <figcaption>Varanasi Ghats at Dawn</figcaption>
+        </figure>
+        <figure class="gal-item" data-caption="Ladakh Mountain Valleys" data-full="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=1400&q=90">
+          <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=600&q=80')"></div>
+          <figcaption>Ladakh Mountain Valleys</figcaption>
+        </figure>
+        <figure class="gal-item" data-caption="Golden Triangle Sunrise" data-full="https://images.unsplash.com/photo-1524175901073-2849a7af52ae?w=1400&q=90">
+          <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1524175901073-2849a7af52ae?w=600&q=80')"></div>
+          <figcaption>Golden Triangle Sunrise</figcaption>
+        </figure>
+        <figure class="gal-item" data-caption="Kerala Backwater Serenity" data-full="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1400&q=90">
+          <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80')"></div>
+          <figcaption>Kerala Backwater Serenity</figcaption>
+        </figure>
+        <figure class="gal-item" data-caption="Jaipur Palace Splendour" data-full="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1400&q=90">
+          <div class="gal-img" style="background-image:url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80')"></div>
+          <figcaption>Jaipur Palace Splendour</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testi-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Traveler Stories</p>
+        <h2 class="section-title">What Visitors <span>Say</span></h2>
+      </div>
+      <div class="testi-slider-wrap">
+        <div class="testi-slider" id="testiSlider">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"India is unlike anywhere else I've ever been. The colors, sounds, flavors — every moment was an adventure. The Taj Mahal at dawn literally took my breath away."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80')"></div>
+              <div><strong>Sophie Laurent</strong><span>Paris, France</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"The Himalayas were transcendent, but it was the warmth of people I met in Rajasthan that truly moved me. India holds your heart long after you leave."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80')"></div>
+              <div><strong>Marcus Webb</strong><span>New York, USA</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Kerala's backwaters on a houseboat is how I found peace. The Ayurvedic spa was genuinely life-changing. I'm already planning my next trip!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1624561172888-ac93c696e10c?w=100&q=80')"></div>
+              <div><strong>Yuki Tanaka</strong><span>Tokyo, Japan</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Varanasi is one of those places that changes you. The evening Ganga Aarti is the most spiritually moving experience of my life. Absolutely unmissable!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80')"></div>
+              <div><strong>Emma Clarke</strong><span>London, UK</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="testi-prev" id="testiPrev" aria-label="Previous testimonial">‹</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-next" id="testiNext" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Get In Touch</p>
+          <h2 class="section-title">Plan Your <span>Dream Trip</span></h2>
+          <p>Tell us about your dream India journey and we'll craft a personalised itinerary just for you.</p>
+          <div class="contact-features">
+            <div class="cf-item"><span>✈️</span><div><strong>Custom Itineraries</strong><p>Tailored to your dates, interests & budget</p></div></div>
+            <div class="cf-item"><span>🎒</span><div><strong>Expert Local Guides</strong><p>On-ground support across all states</p></div></div>
+            <div class="cf-item"><span>💸</span><div><strong>Best Price Promise</strong><p>Transparent pricing, no hidden charges</p></div></div>
+          </div>
+        </div>
+        <div class="contact-form-card reveal" id="formCard">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Rahul" required />
+                <span class="form-error" id="fnameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Sharma" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="femail" placeholder="you@example.com" required />
+              <span class="form-error" id="femailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="fdest">Preferred Destination</label>
+              <select id="fdest" name="fdest">
+                <option value="">Select a region</option>
+                <option value="north">North India – Delhi, Agra, Jaipur</option>
+                <option value="south">South India – Kerala, Tamil Nadu</option>
+                <option value="east">East India – Darjeeling, Kolkata</option>
+                <option value="west">West India – Goa, Mumbai, Gujarat</option>
+                <option value="himalaya">Himalayan Region – Ladakh, Manali</option>
+                <option value="wildlife">Wildlife & Nature Trails</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ftravel">Travel Month</label>
+              <select id="ftravel" name="ftravel">
+                <option value="">Select month</option>
+                <option>January</option><option>February</option><option>March</option>
+                <option>April</option><option>May</option><option>June</option>
+                <option>July</option><option>August</option><option>September</option>
+                <option>October</option><option>November</option><option>December</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Your Dream Trip</label>
+              <textarea id="fmsg" name="fmsg" rows="4" placeholder="I dream of seeing..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Send Enquiry 🪷</span>
+              <span class="btn-loader" hidden>Sending…</span>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess" hidden>
+            <span class="success-icon">✅</span>
+            <h3>Enquiry Sent!</h3>
+            <p>Thank you! Our team will reach out within 24 hours with your personalised itinerary.</p>
+            <button class="btn btn-primary" id="resetForm">Send Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="#home" class="nav-brand">
+            <span class="brand-icon">🪷</span>
+            <span class="brand-name">Discover<strong>India</strong></span>
+          </a>
+          <p>Your gateway to the most incredible journey of your life. India is not just a destination — it is a feeling.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/incredibleindia" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">📷</a>
+            <a href="https://www.facebook.com/incredibleindia" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">📘</a>
+            <a href="https://twitter.com/incredibleindia" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter">🐦</a>
+            <a href="https://www.youtube.com/@incredibleindia" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">🎬</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#destinations">Rajasthan</a></li>
+            <li><a href="#destinations">Kerala</a></li>
+            <li><a href="#destinations">Himalayas</a></li>
+            <li><a href="#destinations">Goa</a></li>
+            <li><a href="#destinations">Varanasi</a></li>
+            <li><a href="#destinations">Ladakh</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Experiences</h4>
+          <ul>
+            <li><a href="#experiences">Wildlife Safaris</a></li>
+            <li><a href="#experiences">Temple Trails</a></li>
+            <li><a href="#experiences">Culinary Tours</a></li>
+            <li><a href="#experiences">Yoga Retreats</a></li>
+            <li><a href="#experiences">Adventure Sports</a></li>
+            <li><a href="#experiences">Scenic Trains</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0)" class="info-link" data-info="privacy">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" class="info-link" data-info="terms">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DiscoverIndia. All rights reserved. Made with ❤️ for Incredible India.</p>
+        <p class="footer-flag">🇮🇳 Jai Hind</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- DESTINATION DETAIL MODAL -->
+  <div class="dest-modal-backdrop" id="destModalBackdrop" hidden></div>
+  <div class="dest-modal" id="destModal" role="dialog" aria-modal="true" hidden>
+    <button class="dest-modal-close" id="destModalClose" aria-label="Close">X</button>
+    <div class="dest-modal-img" id="destModalImg"></div>
+    <div class="dest-modal-body">
+      <span class="dest-tag" id="destModalTag"></span>
+      <h2 id="destModalTitle"></h2>
+      <p class="dest-modal-loc" id="destModalLoc"></p>
+      <p class="dest-modal-desc" id="destModalDesc"></p>
+      <div class="dest-modal-info">
+        <div class="dmi"><strong>Best Time</strong><span id="destModalBest"></span></div>
+        <div class="dmi"><strong>Rating</strong><span id="destModalRating"></span></div>
+        <div class="dmi"><strong>Duration</strong><span id="destModalDuration"></span></div>
+      </div>
+      <h3>Highlights</h3>
+      <ul class="dest-modal-highlights" id="destModalHighlights"></ul>
+      <a href="#contact" class="btn btn-primary" id="destModalCTA">Plan a Visit 🪷</a>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close lightbox">X</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">‹</button>
+    <div class="lb-img-wrap">
+      <img src="" alt="" id="lbImg" />
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">›</button>
+  </div>
+  <div class="lightbox-backdrop" id="lbBackdrop" hidden></div>
+
+  <!-- INFO MODAL (Privacy / Terms) -->
+  <div class="info-modal-backdrop" id="infoModalBackdrop" hidden></div>
+  <div class="info-modal" id="infoModal" role="dialog" aria-modal="true" hidden>
+    <button class="dest-modal-close" id="infoModalClose" aria-label="Close">X</button>
+    <h2 id="infoModalTitle"></h2>
+    <div id="infoModalBody"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
